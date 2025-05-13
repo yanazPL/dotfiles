@@ -1,5 +1,30 @@
 [user]
 	email = jnk.gregorczyk@gmail.com
 	name = Jan Gregorczyk
+	signingkey = ~/.ssh/id_ed25519.pub
+
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+
+[core]
+	excludesfile = ~/.gitignore_global
+
+[rebase]
+	autostash = true
+	autosquash = true
+
+[help]
+	autocorrect = 20
+
+[delta]
+	navigate = true
+
+[push]
+	default = current
+	autosetupremote = true
+
+[rerere]
+	enabled = true
+
+[init]
+	defaultbranch = main
