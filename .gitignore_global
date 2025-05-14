@@ -1,0 +1,14 @@
+# IDE files
+.vscode/
+
+# Build artifacts
+*.log
+*.pyc
+__pycache__/
+
+# Secrets
+.env
+*.key
+
+# Virtual environments
+.venv
