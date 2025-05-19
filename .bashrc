@@ -114,10 +114,17 @@ fi
 
 # add ssh key
 
-# ssh-add ~/.ssh/id_ed25519_sep 
+# ssh-add ~/.ssh/id_ed25519_sep
 
 # Created by `pipx` on 2024-12-19 10:44:20
 export PATH="$PATH:/home/jan/.local/bin"
+
+
+
+[ -f ${ATUIN_ENV:="$HOME/.atuin/bin/env" } ] \
+&& . "$HOME/.atuin/bin/env" \
+&& eval "$(atuin init bash --disable-up-arrow)"
+
 eval "$(starship init bash)"
 
 . "$HOME/.atuin/bin/env"
